@@ -1,0 +1,232 @@
+.filterWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+.filterLabel{
+    margin-right: 10px;
+}
+
+.customDropDown{
+    width: 200px;
+    position: relative;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 6px;
+    color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    text-align: left;
+}
+.customDropDown.fluid{
+    width: 100%;
+}
+.customDropDown.inverted{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    border-color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.customDropDown .dropDownLabel{
+    padding: 3px 10px 0px;
+    flex: 1;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.customDropDown i{
+    font-size: 14px;
+}
+.customDropDown ul{
+    list-style-type: none;
+    padding: 0px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top:100%;
+    left: -1px;
+    right: -1px;
+    margin-top: -2px;
+    background-color: #fff;
+    display: none;
+    z-index: 4;
+    cursor: pointer;
+}
+.customDropDown.inverted ul{
+    background-color: #3a3a3a;
+    color: #fff;
+    border: none;
+}
+.customDropDown ul.active{
+    display: block;
+    max-height: 240px;
+    overflow-y: auto;
+}
+.customDropDown ul li{
+    padding: 6px 10px;
+}
+.customDropDown ul li:hover{
+    background-color: #f5f5f7;
+}
+.customDropDown.inverted ul li:hover{
+    background-color: #232323;
+}
+.resetButton{
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+.enquireNowForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.enquireNowForm{
+    width: 30%;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0px;
+    /* position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+}
+.enquireNowForm .fieldset span.red{
+    display: block;
+}
+.enquireNowForm .title{
+    font-size: 20px;
+    font-weight: 400;
+    color: #3a3a3a;
+}
+.enquireNowForm .sub-title{
+    font-size: 18px;
+    font-weight: 400;
+    color: #3a3a3a;
+}
+.enquireNowForm select{
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 6px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3a3a3a;
+    padding: 0px 10px;
+}
+.enquireNowForm input{
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 6px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3a3a3a;
+    padding: 0px 10px;
+}
+.enquireNowForm input, .enquireNowForm textarea{
+    background: #fff !important;
+}
+.enquireNowForm textarea{
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3a3a3a;
+    padding: 10px;
+}
+.enquireNowForm button{
+    border: 1px solid #fff;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    padding: 9px 60px 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.enquireNowForm input::placeholder, .enquireNowForm textarea::placeholder{
+    color: #3a3a3a;
+}
+.enquireNowForm label{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.enquireNowForm input[type="checkbox"]{
+    height: auto;
+    margin-top: 5px;
+    margin-right: 6px;
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1599px){
+    .customDropDown {
+        height: 38px;
+        margin-bottom: 10px;
+    }
+    .enquireNowForm{
+        width: 38%;
+        padding: 20px 20px;
+    }
+    .enquireNowForm input {
+        height: 38px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
+    .customDropDown {
+        height: 32px;
+        margin-bottom: 10px;
+    }
+    .enquireNowForm{
+        width: 38%;
+        padding: 20px 20px;
+    }
+    .enquireNowForm input {
+        height: 32px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .enquireNowForm{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .enquireNowForm{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .enquireNowForm{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+}

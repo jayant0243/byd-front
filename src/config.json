@@ -1,0 +1,11 @@
+{
+  "API_URL":"https://bydautoindia.com/devdemo/bydnodeserver/routes/clientapi/",
+  "HOME_LINK":"https://bydautoindia.com/devdemo/",
+  "HOME_BANNER":"https://bydautoindia.com/devdemo/bydnodeserver/public/uploads/banner/",
+  "DEALER_THUMB":"https://bydautoindia.com/devdemo/bydnodeserver/public/uploads/dealers/",
+  "EVENT_THUMB":"https://bydautoindia.com/devdemo/bydnodeserver/public/uploads/events/",
+  "CMS_IMAGES_URL":"https://bydautoindia.com/devdemo/bydnodeserver/public/uploads/media/",
+  "NEWS_IMAGE":"https://bydautoindia.com/devdemo/bydnodeserver/public/uploads/news/",
+  "EVENTS_IMAGE":"https://bydautoindia.com/devdemo/bydnodeserver/public/uploads/events/",
+  "BASE_URL": "https://bitm.agency/bydstagingbackend/bydstagingbackend/"
+}
